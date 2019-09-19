@@ -1,0 +1,24 @@
+function countdown(seconds){
+	$('#spinner-overlay').show();
+	$('#spinner').html(seconds).show();
+	setTimeout(
+		function(){
+			seconds--;
+			$('#spinner').html(seconds)
+			if(seconds>-1){
+				countdown(seconds);
+			}else{
+				$('#spinner').hide();
+				$('#spinner-overlay').hide();
+			}
+		},
+		60000
+	);
+}
+$(document).ready(function(){
+	$('#spinner').hide();
+	$('#spinner-overlay').hide();
+	$('button').on('click',function(){
+		countdown($(this).data('time'));
+	});
+});
