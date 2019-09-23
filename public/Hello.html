@@ -4,8 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
 		<script src="Hello/public/custom.js"></script>
-    </head>
-	<script>
+	    <script>
 		function countdown(seconds){
 	$('#spinner-overlay').show();
 	$('#spinner').html(seconds).show();
@@ -30,7 +29,6 @@ $(document).ready(function(){
 		countdown($(this).data('time'));
 	});
 });
-
 		</script>
 <style>
 	html{
@@ -48,7 +46,6 @@ code, kbd, pre, samp {
     font-family: 'PT Mono', 'Courier New', monospace;
 	color: #009900;
 }
-
 header{
 	background: #FFFF99;
 	text-align: center;
@@ -71,7 +68,6 @@ header nav a{
 header nav a:active{
 	border-style: inset;
 }
-
 #spinner{
 	width: 640px;
 	height: 360px;
@@ -102,6 +98,7 @@ header nav a:active{
 	padding-top: 100px;
 }
 </style>
+    </head>
     <button data-time="3">Press Me For Good Fortune</button>
 <aside id="spinner-overlay"></aside>
 <aside id="spinner"></aside>
