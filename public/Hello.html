@@ -5,6 +5,33 @@
 		<meta name="viewport" content="width=device-width">
 		<script src="Hello/public/custom.js"></script>
     </head>
+	<script>
+		function countdown(seconds){
+	$('#spinner-overlay').show();
+	$('#spinner').html(seconds).show();
+	setTimeout(
+		function(){
+			seconds--;
+			$('#spinner').html(seconds)
+			if(seconds>-1){
+				countdown(seconds);
+			}else{
+				$('#spinner').hide();
+				$('#spinner-overlay').hide();
+			}
+		},
+		60000
+	);
+}
+$(document).ready(function(){
+	$('#spinner').hide();
+	$('#spinner-overlay').hide();
+	$('button').on('click',function(){
+		countdown($(this).data('time'));
+	});
+});
+
+		</script>
 <style>
 	html{
 	box-sizing: border-box;
