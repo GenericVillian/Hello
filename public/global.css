@@ -1,0 +1,68 @@
+html{
+	box-sizing: border-box;
+	font-family: cursive, sans-serif; 
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	font-family: inherit; 
+}
+img, input[type="image"]{ 
+	box-sizing: content-box;
+}
+code, kbd, pre, samp {
+    font-family: 'PT Mono', 'Courier New', monospace;
+	color: #009900;
+}
+
+header{
+	background: #FFFF99;
+	text-align: center;
+	width: 420px;
+	top: 0px;
+}
+header h1{
+	margin: 0px;
+}
+header nav a{
+	display: inline-block;
+	margin: 4px 2px 10px 2px;
+	padding: 4px;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #333333;
+	border: 4px outset #222222;
+	border-radius: 4px;
+}
+header nav a:active{
+	border-style: inset;
+}
+
+#spinner{
+	width: 640px;
+	height: 360px;
+	background-image: url('https://i.imgur.com/gW87CZm.mp4');
+	background-position: center center;
+	text-align: center;
+    font-size: 12px;
+	font-weight: bold;
+    padding-top: 6px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 15px;
+	position: fixed;
+	top: 25%;
+	left: 25%;
+	background-color: rgb(255, 255, 255);
+	border-radius: 15px;
+}
+#spinner-overlay{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+	background-image: url('https://i.imgur.com/XKMllN2.jpg');
+	opacity: 0.5;
+}
+.start{
+	padding-top: 100px;
+}
